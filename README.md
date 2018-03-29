@@ -37,7 +37,7 @@ $ cd hmmer-3.1b2
 $ ./configure && make && sudo make install
 $ cd easel && make check && sudo make install
 ```
->**Install BinSanity**
+>**Install [BinSanity](https://github.com/edgraham/BinSanity/wiki/Installation)**
 
 `sudo pip install BinSanity`
 
