@@ -30,12 +30,9 @@ parser.add_argument('--performProdigal', action='store_true', help='Run \
 parser.add_argument('--cut_tc',action='store_false',help="use hmm profiles TC trusted cutoffs to set all thresholding")
 parser.add_argument('--outPrefix', help='Provide prefix of names for marker \
 					output files.')
-parser.add_argument('--Num',help='Number of genes being looked for\
-					 (e.g if using hug ribosomal set it would be 16')
 parser.add_argument('-E',help='Set E-Value to be used in hmmsearch. Default: 1E-5',default='1E-5')
 args = parser.parse_args()
 arg_dict = vars(args)
-minnum = int(arg_dict['Num'])
 Evalue = arg_dict['E']
 outname = arg_dict['outPrefix']
 if arg_dict["performProdigal"] == True:
@@ -94,7 +91,7 @@ for genome in genome_marker_count:
             remove.append(i)
     for x in remove:
         del genome_marker_count[genome][x]
-    if float(len(genome_marker_count[genome].keys())) >= float(num_markers/minnum):
+    if float(len(genome_marker_count[genome].keys())) >= 1:
         reverse_gene_info = {}
         for k in genome_marker_count[genome]:
             reverse_gene_info[genome_marker_count[genome][k]] = k
