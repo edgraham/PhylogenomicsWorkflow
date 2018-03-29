@@ -18,13 +18,21 @@ This tutorial will go through the following:
 To run this protocol you will need the following programs:
 
 [Python2.7](https://www.python.org/download/releases/2.7/)
+
 [BioPython](http://biopython.org/)
+
 [HMMER](http://hmmer.org/download.html)
+
 [Prodigal](https://github.com/hyattpd/prodigal/wiki/Installation)
+
 [BinSanity](https://github.com/edgraham/BinSanity/wiki/Installation)
+
 [Muscle](https://www.drive5.com/muscle/manual/install.html)
+
 [TrimAL](http://trimal.cgenomics.org/)
+
 [FastTree](http://www.microbesonline.org/fasttree/)
+
 
 HMMER and BinSanity can be installed as follows:
 
