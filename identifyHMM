@@ -101,6 +101,6 @@ for genome in genome_marker_count:
 	        out_file = open("%s_%s.faa" % (outname, marker), "a")
 	        out_file.write(">%s\n" % (genome) +str(record.seq)+"\n")
 	        out_file.close()
-    if float(len(genome_marker_count[genome].keys())) < float(num_markers/minnum):
+    if float(len(genome_marker_count[genome].keys())) < float(1):
         print str(genome) + " markers = " + str(len(genome_marker_count[genome].keys()))
 
