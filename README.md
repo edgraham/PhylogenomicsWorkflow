@@ -15,6 +15,7 @@ This tutorial will go through the following:
 
 **This procedure assumes that you have binned your assembled metagenomes and have Metagenome Assembled Genomes (MAGs) ready for analysis.**
 
+Another version of this protocol with more detailed information on what should be in your directory after each command is found on ProtocolsIO [here](dx.doi.org/10.17504/protocols.io.mp5c5q6)
 ## Required Dependencies ##
 
 To run this protocol you will need the following programs:
@@ -151,6 +152,9 @@ You can run the following to trim your alignments:
 ```
 while read p;do trimal -automated1 -in Dataset1_"$p".aln -out Dataset1_"$p".trimmed.aln; done < ../../hug_marker_list.txt
 ```
+
+Once your sequences are trimmed I advise manually inspecting the file to ensure everything looks right.
+
 ## Step 6: Concatenate proteins ##
 
 Now that you have the trimmed and aligned sequences you can concatenate these 16 files. To do this we will use the `concat` script packaged with BinSanity. 
@@ -186,8 +190,12 @@ optional arguments:
 
 You now have a concatenated alignment 'Dataset1.HugRibosomal.trimmed.concat.aln' which can be used to build a phylogenetic tree.
 
-We will be using FastTree with the `-gamma` and `-lg` parameters. These parameters are optional and just indicate what models we would like to  use for branch length calculation and amino acid evolution respectively. Feel free to adjust these for your own purposes.
+We will be using FastTree with the `-gamma` and `-lg` parameters. These parameters are optional and just indicate what models we would like to  use for branch length calculation and amino acid evolution respectively. Feel free to adjust these for your own purposes after looking at the FastTree Manual.
 
+```
+FastTree -gamma -lg Dataset1.HugRibosomal.trimmed.concat.aln > Dataset1.HugRibosomal.trimmed.concat.newick
+
+```
 
 ## Step 8: View Tree ##
 
