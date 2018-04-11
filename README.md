@@ -15,7 +15,7 @@ This tutorial will go through the following:
 
 **This procedure assumes that you have binned your assembled metagenomes and have Metagenome Assembled Genomes (MAGs) ready for analysis.**
 
-Another version of this protocol with more detailed information on what should be in your directory after each command is found on ProtocolsIO [here](dx.doi.org/10.17504/protocols.io.mp5c5q6)
+Another version of this protocol with more detailed information on what should be in your directory after each command is found on ProtocolsIO: dx.doi.org/10.17504/protocols.io.mp5c5q6
 ## Required Dependencies ##
 
 To run this protocol you will need the following programs:
