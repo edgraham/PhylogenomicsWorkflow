@@ -17,8 +17,9 @@ This tutorial will go through the following:
 
 Another version of this protocol with more detailed information on what should be in your directory after each command is found on ProtocolsIO: dx.doi.org/10.17504/protocols.io.mp5c5q6
 
-To cite this workflow reference this paper:
- Graham, E. D., J. F. Heidelberg, and B. J. Tully. 'Potential for primary productivity in a globally-distributed bacterial phototroph.' The ISME journal (2018)
+**To cite this workflow reference this paper:**
+
+ **Graham, E. D., J. F. Heidelberg, and B. J. Tully. 'Potential for primary productivity in a globally-distributed bacterial phototroph.' The ISME journal (2018)**
  
 ## Required Dependencies ##
 
