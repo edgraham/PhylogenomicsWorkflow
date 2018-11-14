@@ -27,7 +27,7 @@ parser.add_argument('--markerdb', help='Provide HMM file of markers. \
 					Markers should have a descriptive ID name.')
 parser.add_argument('--performProdigal', action='store_true', help='Run \
 					Prodigal on input genome nucleotide FASTA file')
-parser.add_argument('--cut_tc',action='store_false',help="use hmm profiles TC trusted cutoffs to set all thresholding")
+parser.add_argument('--cut_tc',action='store_true',help="use hmm profiles TC trusted cutoffs to set all thresholding")
 parser.add_argument('--outPrefix', help='Provide prefix of names for marker \
 					output files.')
 parser.add_argument('-E',help='Set E-Value to be used in hmmsearch. Default: 1E-5',default='1E-5')
